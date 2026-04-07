@@ -1,0 +1,17 @@
+{
+  "name": "my-claude-plugin",
+  "owner": {
+    "name": "Mathis Serrier"
+  },
+  "metadata": {
+    "description": "Custom workflow skills for Claude Code: commit, sessions, rename, delete, doc, fix-types."
+  },
+  "plugins": [
+    {
+      "name": "my-workflow",
+      "source": ".",
+      "description": "Custom skills: sessions management, commit, delete, rename, fix-types, doc generation.",
+      "version": "1.0.0"
+    }
+  ]
+}
