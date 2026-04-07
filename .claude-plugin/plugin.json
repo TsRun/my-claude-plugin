@@ -1,0 +1,6 @@
+{
+  "name": "my-workflow",
+  "description": "Custom skills: sessions management, commit, delete, rename, fix-types, doc generation.",
+  "version": "1.0.0",
+  "author": { "name": "Mathis Serrier" }
+}
