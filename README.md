@@ -15,7 +15,23 @@ Custom skills plugin for Claude Code.
 
 ## Installation
 
+Clone this repo into your project's `.claude/commands/` directory:
+
 ```bash
-/plugin marketplace add TsRun/my-claude-plugin
-/plugin install my-workflow@TsRun
+# From your project root
+git clone https://github.com/TsRun/my-claude-plugin.git /tmp/my-claude-plugin
+mkdir -p .claude/commands
+cp /tmp/my-claude-plugin/.claude/commands/*.md .claude/commands/
+rm -rf /tmp/my-claude-plugin
 ```
+
+Or for global commands (available in all projects):
+
+```bash
+git clone https://github.com/TsRun/my-claude-plugin.git /tmp/my-claude-plugin
+mkdir -p ~/.claude/commands
+cp /tmp/my-claude-plugin/.claude/commands/*.md ~/.claude/commands/
+rm -rf /tmp/my-claude-plugin
+```
+
+After installation, the commands are available as `/commit`, `/rename`, `/delete`, `/sessions`, `/doc`, and `/fix-types` in Claude Code.
