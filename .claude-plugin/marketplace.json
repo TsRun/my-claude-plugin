@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "my-workflow",
-      "source": ".",
+      "source": "./",
       "description": "Custom skills: sessions management, commit, delete, rename, fix-types, doc generation.",
       "version": "1.0.0"
     }
