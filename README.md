@@ -7,9 +7,6 @@ Dev workflow skills and MCP integrations for Claude Code.
 | Skill | Description |
 |-------|-------------|
 | `/tsrun-toolkit:commit` | Commit & push with `[TYPE] message` format (ADD, UPDATE, FIX, REMOVE) |
-| `/tsrun-toolkit:rename` | Rename/tag the current session |
-| `/tsrun-toolkit:delete` | Delete sessions: `noname`, `all`, or `name <name>` |
-| `/tsrun-toolkit:sessions` | List all named sessions |
 | `/tsrun-toolkit:doc` | Generate or update project documentation |
 | `/tsrun-toolkit:fix-types` | Auto-fix all type checking errors (pyright/mypy) |
 
