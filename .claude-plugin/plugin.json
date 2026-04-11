@@ -14,7 +14,7 @@
       "title": "Obsidian API Key",
       "description": "Obsidian Local REST API key (from plugin settings)",
       "type": "string",
-      "sensitive": true
+      "sensitive": false
     }
   },
   "mcpServers": {
