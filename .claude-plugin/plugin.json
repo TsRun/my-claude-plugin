@@ -17,6 +17,21 @@
       "sensitive": false
     }
   },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -c \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\Windows Notify.wav').PlaySync()\"",
+            "shell": "bash",
+            "async": true,
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  },
   "mcpServers": {
     "obsidian": {
       "command": "uvx",
