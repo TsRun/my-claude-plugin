@@ -19,8 +19,8 @@
   },
   "mcpServers": {
     "obsidian": {
-      "command": "npx",
-      "args": ["-y", "obsidian-mcp"],
+      "command": "uvx",
+      "args": ["mcp-obsidian"],
       "env": {
         "OBSIDIAN_API_KEY": "${user_config.obsidian_api_key}",
         "OBSIDIAN_PORT": "${user_config.obsidian_port}"
