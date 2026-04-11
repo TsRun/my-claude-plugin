@@ -1,6 +1,30 @@
 {
-  "name": "my-workflow",
-  "description": "Custom skills: sessions management, commit, delete, rename, fix-types, doc generation.",
-  "version": "1.0.0",
-  "author": { "name": "Mathis Serrier" }
+  "name": "tsrun-toolkit",
+  "description": "Dev workflow skills (commit, fix-types, doc) with Obsidian and Playwright MCP integrations.",
+  "version": "1.3.0",
+  "author": { "name": "Mathis Serrier" },
+  "userConfig": {
+    "obsidian_port": {
+      "description": "Obsidian REST API port (default: 27124)",
+      "sensitive": false
+    },
+    "obsidian_api_key": {
+      "description": "Obsidian Local REST API key (from plugin settings)",
+      "sensitive": true
+    }
+  },
+  "mcpServers": {
+    "obsidian": {
+      "command": "npx",
+      "args": ["-y", "mcp-obsidian"],
+      "env": {
+        "OBSIDIAN_API_KEY": "${user_config.obsidian_api_key}",
+        "OBSIDIAN_PORT": "${user_config.obsidian_port}"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    }
+  }
 }

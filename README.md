@@ -1,23 +1,27 @@
-# my-claude-plugin
+# tsrun-toolkit
 
-Custom skills plugin for Claude Code.
+Dev workflow skills and MCP integrations for Claude Code.
 
 ## Skills
 
 | Skill | Description |
 |-------|-------------|
-| `/my-workflow:commit` | Commit & push with `[TYPE] message` format (ADD, UPDATE, FIX, REMOVE) |
-| `/my-workflow:rename` | Rename/tag the current session (overrides built-in) |
-| `/my-workflow:delete` | Delete sessions: `noname`, `all`, or `name <name>` |
-| `/my-workflow:sessions` | List all named sessions |
-| `/my-workflow:doc` | Generate or update project documentation |
-| `/my-workflow:fix-types` | Auto-fix all type checking errors (pyright/mypy) |
+| `/tsrun-toolkit:commit` | Commit & push with `[TYPE] message` format (ADD, UPDATE, FIX, REMOVE) |
+| `/tsrun-toolkit:doc` | Generate or update project documentation |
+| `/tsrun-toolkit:fix-types` | Auto-fix all type checking errors (pyright/mypy) |
+
+## MCP Servers
+
+| Server | Description |
+|--------|-------------|
+| **Obsidian** | Read/write your Obsidian vault via Local REST API |
+| **Playwright** | Browser automation and E2E testing (by Microsoft) |
 
 ## Installation
 
 ```bash
 /plugin marketplace add TsRun/my-claude-plugin
-/plugin install my-workflow@my-claude-plugin
+/plugin install tsrun-toolkit@my-claude-plugin
 ```
 
-After installation, skills are available as `/my-workflow:commit`, `/my-workflow:rename`, etc.
+On install you'll be prompted for Obsidian settings (port and API key). These are optional if you don't use Obsidian.

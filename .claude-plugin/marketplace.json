@@ -4,14 +4,14 @@
     "name": "Mathis Serrier"
   },
   "metadata": {
-    "description": "Custom workflow skills for Claude Code: commit, sessions, rename, delete, doc, fix-types."
+    "description": "TsRun toolkit: dev workflow skills and MCP integrations for Claude Code."
   },
   "plugins": [
     {
-      "name": "my-workflow",
+      "name": "tsrun-toolkit",
       "source": "./",
-      "description": "Custom skills: sessions management, commit, delete, rename, fix-types, doc generation.",
-      "version": "1.0.0"
+      "description": "Dev workflow skills (commit, sessions, rename, delete, fix-types, doc) with Obsidian and Playwright MCP integrations.",
+      "version": "1.2.0"
     }
   ]
 }
