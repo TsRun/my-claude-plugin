@@ -5,11 +5,15 @@
   "author": { "name": "Mathis Serrier" },
   "userConfig": {
     "obsidian_port": {
+      "title": "Obsidian Port",
       "description": "Obsidian REST API port (default: 27124)",
+      "type": "string",
       "sensitive": false
     },
     "obsidian_api_key": {
+      "title": "Obsidian API Key",
       "description": "Obsidian Local REST API key (from plugin settings)",
+      "type": "string",
       "sensitive": true
     }
   },
