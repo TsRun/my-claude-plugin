@@ -20,7 +20,7 @@
   "mcpServers": {
     "obsidian": {
       "command": "npx",
-      "args": ["-y", "mcp-obsidian"],
+      "args": ["-y", "obsidian-mcp"],
       "env": {
         "OBSIDIAN_API_KEY": "${user_config.obsidian_api_key}",
         "OBSIDIAN_PORT": "${user_config.obsidian_port}"
