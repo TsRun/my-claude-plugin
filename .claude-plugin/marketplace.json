@@ -11,7 +11,7 @@
       "name": "tsrun-toolkit",
       "source": "./",
       "description": "Dev workflow skills (commit, fix-types, doc) with Obsidian and Playwright MCP integrations.",
-      "version": "1.3.0"
+      "version": "1.4.0"
     }
   ]
 }
