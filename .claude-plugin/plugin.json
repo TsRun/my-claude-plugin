@@ -3,7 +3,7 @@
   "description": "Dev workflow skills (commit, fix-types, doc) with Obsidian and Playwright MCP integrations.",
   "version": "1.4.0",
   "author": { "name": "Mathis Serrier" },
-  "commands": ["./commands/"],
+  "skills": "./skills/",
   "userConfig": {
     "obsidian_port": {
       "title": "Obsidian Port",
