@@ -20,8 +20,8 @@ Dev workflow skills and MCP integrations for Claude Code.
 ## Installation
 
 ```bash
-/plugin marketplace add TsRun/my-claude-plugin
-/plugin install tsrun-toolkit@my-claude-plugin
+/plugin marketplace add TsRun/tsrun-toolkit
+/plugin install tsrun-toolkit@tsrun-toolkit
 ```
 
 On install you'll be prompted for Obsidian settings (port and API key). These are optional if you don't use Obsidian.
