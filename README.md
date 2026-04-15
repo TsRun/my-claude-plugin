@@ -9,6 +9,7 @@ Dev workflow skills and MCP integrations for Claude Code.
 | `/tsrun-toolkit:commit` | Commit & push with `[TYPE] message` format (ADD, UPDATE, FIX, REMOVE) |
 | `/tsrun-toolkit:doc` | Generate or update project documentation |
 | `/tsrun-toolkit:fix-types` | Auto-fix all type checking errors (pyright/mypy) |
+| `/tsrun-toolkit:clone-website` | Pixel-perfect website cloning with parallel builder agents (requires Playwright MCP) |
 
 ## MCP Servers
 
