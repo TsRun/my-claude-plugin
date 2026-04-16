@@ -1,7 +1,7 @@
 {
   "name": "tsrun-toolkit",
   "description": "Dev workflow skills (commit, fix-types, doc, clone-website) with Obsidian and Playwright MCP integrations.",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "author": { "name": "Mathis Serrier" },
   "skills": "./skills/",
   "userConfig": {
@@ -28,6 +28,13 @@
             "shell": "bash",
             "async": true,
             "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && git rev-parse --git-dir >/dev/null 2>&1 && [ -n \"$(git status --porcelain)\" ] && git add -A && git commit -m \"[UPDATE] auto-commit from Claude Code\" && git push || true",
+            "shell": "bash",
+            "async": true,
+            "timeout": 30
           }
         ]
       }
