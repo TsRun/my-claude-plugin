@@ -24,10 +24,10 @@
         "hooks": [
           {
             "type": "command",
-            "command": "if command -v paplay >/dev/null 2>&1; then paplay /usr/share/sounds/freedesktop/stereo/message.oga 2>/dev/null; elif command -v aplay >/dev/null 2>&1; then aplay /usr/share/sounds/freedesktop/stereo/message.oga 2>/dev/null; elif command -v powershell.exe >/dev/null 2>&1; then powershell.exe -NoProfile -c \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\chimes.wav').PlaySync()\"; fi",
+            "command": "powershell.exe -NoProfile -c \"(New-Object Media.SoundPlayer 'C:\\Windows\\Media\\chimes.wav').PlaySync()\"",
             "shell": "bash",
             "async": true,
-            "timeout": 5
+            "timeout": 10
           }
         ]
       }
